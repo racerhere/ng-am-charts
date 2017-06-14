@@ -3,11 +3,21 @@
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "module": "es2015",
-    "baseUrl": "",
-    "types": []
+    "sourceMap": false,
+    "declaration": true,
+    "stripInternal": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "rootDir": "../src",
+    "baseUrl": "../src"
   },
   "exclude": [
     "test.ts",
     "**/*.spec.ts"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "annotateForClosureCompiler": true,
+    "strictMetadataEmit": true,
+    "skipTemplateCodegen": true
+  }
 }
